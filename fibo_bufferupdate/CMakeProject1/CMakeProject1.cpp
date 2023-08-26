@@ -22,7 +22,7 @@ int Fibo_bufferupdate::fibo_bufferupdate(int count, int nback) {
 		logic = i % nback; //check
 		//std::cout << "i=" << i << " logic = " << logic << std::endl;
 		for (int j = 0; j < nback; ++j) {
-			if (j != logic) buf[logic] += buf[j]; //if correct, not elegant
+			if (j != logic) buf[logic] += buf[j]; // not elegant
 		}
 	}
 	return buf[logic];
