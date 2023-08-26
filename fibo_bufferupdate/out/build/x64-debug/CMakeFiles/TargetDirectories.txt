@@ -1,0 +1,5 @@
+C:/Users/mcavoylocal/source/repos/fibo_bufferupdate/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/mcavoylocal/source/repos/fibo_bufferupdate/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/mcavoylocal/source/repos/fibo_bufferupdate/out/build/x64-debug/CMakeProject1/CMakeFiles/CMakeProject1.dir
+C:/Users/mcavoylocal/source/repos/fibo_bufferupdate/out/build/x64-debug/CMakeProject1/CMakeFiles/edit_cache.dir
+C:/Users/mcavoylocal/source/repos/fibo_bufferupdate/out/build/x64-debug/CMakeProject1/CMakeFiles/rebuild_cache.dir
