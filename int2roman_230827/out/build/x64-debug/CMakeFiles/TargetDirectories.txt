@@ -1,0 +1,5 @@
+C:/Users/mcavoylocal/source/repos/int2roman_230827/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/mcavoylocal/source/repos/int2roman_230827/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/mcavoylocal/source/repos/int2roman_230827/out/build/x64-debug/int2roman_230827/CMakeFiles/int2roman_230827.dir
+C:/Users/mcavoylocal/source/repos/int2roman_230827/out/build/x64-debug/int2roman_230827/CMakeFiles/edit_cache.dir
+C:/Users/mcavoylocal/source/repos/int2roman_230827/out/build/x64-debug/int2roman_230827/CMakeFiles/rebuild_cache.dir
