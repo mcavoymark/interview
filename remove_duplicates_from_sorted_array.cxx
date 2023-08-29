@@ -1,14 +1,14 @@
 class Solution {
 public:
     
-    //pure C++, bit bigger than the two below. set uses a binary search
+    //not in-place, pure C++, bit bigger than the two below. set uses a binary search
     int removeDuplicates(vector<int>& nums) {
         std::set<int> s(nums.begin(),nums.end());
         nums.assign(s.begin(),s.end());
         return s.size();   
     }
     
-    //linear search   
+    //in-place, linear search   
     /*int removeDuplicates(vector<int>& nums) {
         int k=1;
         for( auto unique=nums.begin(), i=nums.begin(); ++i!=nums.end(); ) {
@@ -20,7 +20,7 @@ public:
         return k;
     }*/
     
-    //binary search
+    //in-place, binary search
     /*int removeDuplicates(vector<int>& nums) {
         int k=1;
         for(auto unique=nums.begin(), i=nums.begin();;){
