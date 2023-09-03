@@ -4,10 +4,9 @@ from typing import List
 
 class Solution:
 
-    #not in-place and nums would need to have globl scope or returned
+    #not in-place
     def removeDuplicates1(self, nums: List[int]) -> int:
-        nums = list(sorted(set(nums)))
-        return nums
+        nums[:] = list(sorted(set(nums)))
 
     def removeDuplicates2(self, nums: List[int]) -> int:
         if len(nums)==1:
