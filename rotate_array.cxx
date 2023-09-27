@@ -9,6 +9,11 @@ public:
             std::reverse(nums.begin()+k,nums.end());
         } 
     }
+
+    void rotate(vector<int>& nums, int k) { //in place
+        for(int i=0;i<k;++i) std::swap(nums[i],nums[nums.size()-k+i]);
+        for(int i=0;i<k;++i) std::swap(nums[k+i],nums[nums.size()-k+i]);
+    } 
 };
 
 //hint4 close but not there yet
@@ -27,22 +32,6 @@ public:
         } 
     }
 };*/
-
-/*class Solution {
-public:
-    void rotate(vector<int>& nums, int k) { //in place
-        for(int i=0;i<--k;++i) std:swap(nums[i],nums[k]);
-    }
-};*/
-
-/*void rotate(int arr[], int n)
-{
-    int i = 0, j = n-1; // i and j pointing to first and last element respectively
-    while(i != j){
-    swap(arr[i], arr[j]);
-    i++;
-    }
-}*/
 
 /*
 Input: nums = [1,2,3,4,5,6,7], k = 3

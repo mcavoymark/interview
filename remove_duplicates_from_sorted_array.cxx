@@ -34,5 +34,36 @@ public:
         }
         return k;
     }*/
+
+    /*int removeDuplicates(vector<int>& nums) {
+        int k=0; //scope
+        for(auto i=nums.begin(); ++i!=nums.end();) { //start on second element
+           if(*i!=nums[k]) {
+               nums[++k]=*i;
+           }
+        }
+        return ++k; //index to count
+    }*/
+    /*int removeDuplicates(vector<int>& nums) {
+        int k=1; //scope
+        for(int i : nums) {
+           if(i!=nums[k-1]) {
+               nums[k++]=i;
+           }
+        }
+        return k;
+    }*/
+    int removeDuplicates(vector<int>& nums) {
+        for(auto i=++nums.begin(); i!=nums.end();) { //start on second element
+           //std::cout<<"nums=";for(int k : nums) std::cout<<k<<" ";std::cout<<std::endl;
+           //std::cout<<"i="<<*i<<" i-1="<<*(i-1)<<std::endl;
+           if(*i==*(i-1)) {
+               nums.erase(i-1);
+           } else {
+               i++;
+           }
+       } 
+       return nums.size();
+    }
     
 };
