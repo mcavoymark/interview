@@ -78,6 +78,7 @@ public:
         return v0;
     }
     #endif
+    #if 0
     //nums2 one element at a time, crush nums1
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
         std::vector<int> v0; //scope
@@ -90,6 +91,21 @@ public:
                 } 
             }
 	    if(!nums1.size()) break;
+        } 
+        return v0;
+    }
+    #endif
+    //nums2 one element at a time
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+        std::unordered_map<int,int> m0;
+        for(auto i : nums1) m0[i]++;
+        std::vector<int> v0; //scope
+        for(auto i : nums2) {
+            if(m0[i]-- >0) {
+                v0.push_back(i);
+                if(!m0[i]) m0.erase(i);
+                if(m0.empty()) break;
+            } 
         } 
         return v0;
     }
